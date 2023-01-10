@@ -3,14 +3,14 @@ import classes from './Screen5.module.css';
 
 function Screen5(props) {
 
-  const [greenEnergyPlans, setGreenEnergyPlans] = useState('All');
+  const [greenEnergyPlans, setGreenEnergyPlans] = useState('All Plans');
 
   	const handleShowAllChange = () => {
-			setGreenEnergyPlans('All');
+			setGreenEnergyPlans('All Plans');
 		};
 
 		const handleGreenPlanChange = () => {
-			setGreenEnergyPlans('GreenOnly');
+			setGreenEnergyPlans('Green Plans');
 		};
 
 
@@ -32,14 +32,14 @@ function Screen5(props) {
 				<div>
 					<RadioButton
 						label='Show All'
-						value={greenEnergyPlans === 'All'}
+						value={greenEnergyPlans === 'All Plans'}
 						onChange={handleShowAllChange}
 					/>
 				</div>
 				<div>
 					<RadioButton
 						label='Show 100% Green plans ONLY'
-						value={greenEnergyPlans === 'GreenOnly'}
+						value={greenEnergyPlans === 'Green Plans'}
 						onChange={handleGreenPlanChange}
 					/>
 				</div>
@@ -49,8 +49,6 @@ function Screen5(props) {
 				Things to consider... What is “Going Green” with energy? How does my
 				choice make an impact?
 			</p>
-
-			<button className={classes.navBtn}>Show Plans</button>
 		</Fragment>
 	);
 }

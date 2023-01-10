@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, Fragment } from 'react';
 import Modal from './UI/Modal';
 import Screen1 from './Screen1';
 import Screen2 from './Screen2';
@@ -35,7 +35,10 @@ function HelpMeChoose(props) {
 				<Screen4 curPage={currentPage} totalPages={totalPages} />
 			)}
 			{currentPage === 5 && (
-				<Screen5 curPage={currentPage} totalPages={totalPages} />
+				<Fragment>
+					<Screen5 curPage={currentPage} totalPages={totalPages} />
+					<button className={`${classes.navBtn} ${classes.submitBtn}`}>Show Plans</button>
+				</Fragment>
 			)}
 			{currentPage !== 1 && (
 				<button className={classes.navBtn} onClick={getPrevious}>

@@ -8,22 +8,22 @@ function Screen3(props) {
 	const largeHome = '2000-3000 square feet, ~1500kWh usage';
 	const extraLargeHome = '3000+ square feet, ~2000kWh usage';
 
-	const [usage, setUsage] = useState('Small');
+	const [usage, setUsage] = useState('Small Homes');
 
 	const handleSmallChange = () => {
-		setUsage('Small');
+		setUsage('Small Homes');
 	};
 
 	const handleMediumChange = () => {
-		setUsage('Medium');
+		setUsage('Medium Homes');
 	};
 
 	const handleLargeChange = () => {
-		setUsage('Large');
+		setUsage('Large Homes');
 	};
 
 	const handleExtraLargeChange = () => {
-		setUsage('ExtraLarge');
+		setUsage('Extra Large Homes');
 	};
 
 	return (
@@ -43,7 +43,7 @@ function Screen3(props) {
 				<div>
 					<RadioButton
 						label='Small Home'
-						value={usage === 'Small'}
+						value={usage === 'Small Homes'}
 						onChange={handleSmallChange}
 					/>
 					<p>{smallHome}</p>
@@ -51,7 +51,7 @@ function Screen3(props) {
 				<div>
 					<RadioButton
 						label='Medium Home'
-						value={usage === 'Medium'}
+						value={usage === 'Medium Homes'}
 						onChange={handleMediumChange}
 					/>
 					<p>{mediumHome}</p>
@@ -59,7 +59,7 @@ function Screen3(props) {
 				<div>
 					<RadioButton
 						label='Large Home'
-						value={usage === 'Large'}
+						value={usage === 'Large Homes'}
 						onChange={handleLargeChange}
 					/>
 					<p>{largeHome}</p>
@@ -67,7 +67,7 @@ function Screen3(props) {
 				<div>
 					<RadioButton
 						label='Extra Large Home'
-						value={usage === 'ExtraLarge'}
+						value={usage === 'Extra Large Homes'}
 						onChange={handleExtraLargeChange}
 					/>
 					<p>{extraLargeHome}</p>

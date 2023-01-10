@@ -5,15 +5,15 @@ function Screen4(props) {
 	const [contractTerm, setContractTerm] = useState('All');
 
   const handleAllContractTermChange = () => {
-    setContractTerm('All')
+    setContractTerm('All Contracts')
   };
 
   const handleFixedContractTermChange = () => {
-    setContractTerm('Fixed Term')
+    setContractTerm('Fixed Term Contracts')
   };
 
   const handleNoContractTermChange = () => {
-    setContractTerm('No Contract')
+    setContractTerm('No Contracts')
   };
 
 	return (
@@ -31,21 +31,21 @@ function Screen4(props) {
 				<div>
 					<RadioButton
 						label='Show All'
-						value={contractTerm === 'All'}
+						value={contractTerm === 'All Contracts'}
 						onChange={handleAllContractTermChange}
 					/>
 				</div>
 				<div>
 					<RadioButton
 						label='Fixed Term Only'
-						value={contractTerm === 'Fixed Term'}
+						value={contractTerm === 'Fixed Term Contracts'}
 						onChange={handleFixedContractTermChange}
 					/>
 				</div>
 				<div>
 					<RadioButton
 						label='No Contract Only'
-						value={contractTerm === 'No Contract'}
+						value={contractTerm === 'No Contracts'}
 						onChange={handleNoContractTermChange}
 					/>
 				</div>
