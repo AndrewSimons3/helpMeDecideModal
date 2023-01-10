@@ -1,0 +1,30 @@
+.provider-list {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+li {
+  margin: 10px;
+}
+
+.navBtn {
+  border: 2px solid #33bee8;
+    background: #33bee8;
+    color: #fff;
+    font-size: 16px;
+    width: 124px;
+    height: 50px;
+    cursor: pointer;
+    padding: 0;
+    margin-right: 16px;
+    -webkit-transition: all 300ms cubic-bezier(.25,.46,.45,.94);
+    transition: all 300ms cubic-bezier(.25,.46,.45,.94);
+    border-radius: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.navBtn:hover {
+   border: 2px solid #275968;
+    background: #1c4d5c;
+}

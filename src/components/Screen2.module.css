@@ -1,0 +1,16 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.answers {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+label {
+  margin: .5rem 0;
+}
